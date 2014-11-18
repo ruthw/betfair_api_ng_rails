@@ -44,7 +44,7 @@ module BetfairApiNgRails
         def set_crt_file(_path); end
         def set_key_file(_path); end
         def set_verify_mode(_value); end
-        def set_ssl_files(_crt_path, _key_path, _verify = OpenSSL::SSL::VERIFY_PEER); end
+        def set_ssl_files(_crt_path, _key_path, _verify = OpenSSL::SSL::VERIFY_NONE); end
         def set_accept_header(_value); end
         def set_request_headers(_headers); end
         def set_header(_name, _value); end
