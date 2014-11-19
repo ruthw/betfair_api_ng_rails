@@ -14,7 +14,7 @@ module BetfairApiNgRails
         CODE
       end
 
-      def list_market_catalogue(filter: MarketFilter.new, market_projection: [], sort: "", max_results: '1', locale: BetfairApiNgRails.config.locale)
+      def list_market_catalogue(filter: Api::Data::MarketFilter.new, market_projection: [], sort: "", max_results: '1', locale: BetfairApiNgRails.config.locale)
         run_request __method__, { filter: filter, market_projection: market_projection, sort: sort, max_results: max_results }, { locale: locale }
       end
 
